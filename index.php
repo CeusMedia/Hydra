@@ -1,14 +1,15 @@
 <?php
-die("not yet.");
 /*  --  LIBRARY SETTINGS  --  */
 $pathLibraries	= '';
-$versionCMC		= 'trunk';
-$versionCMF		= 'trunk';
-$versionCMM		= 'trunk';
+$versionCMC		= 'CeusMedia/Common';
+$versionCMF		= 'CeusMedia/HydrogenFramework';
+$versionCMM		= 'CeusMedia/';
 $autoloadPaths	= array(
 	array( 'path' => 'classes/', 'prefix' => 'Tool_Hydrogen_Setup_' ),
 	array( 'path' => 'classes/', 'prefix' => NULL ),
 );
+
+
 
 /*  --  RUN APPLICATION  --  */
 try{
