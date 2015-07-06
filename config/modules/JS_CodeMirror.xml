@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<module>
+	<title>JS: CodeMirror</title>
+	<description><![CDATA[Component that provides a code editor in the browser.]]></description>
+	<version install-type="2" install-source="Local_CM_Public" install-date="2015-07-06T21:52:42+02:00">5.0</version>
+	<category>JavaScript</category>
+	<company site="http://codemirror.net/">codemirror.net</company>
+	<author email="marijnh@gmail.com">marijnh@gmail.com</author>
+	<license source="http://codemirror.net/LICENSE">MIT-style</license>
+	<files>
+		<class>View/Helper/CodeMirror.php5</class>
+		<style source="theme" load="auto">codemirror.ext.css</style>
+		<script>codemirror.ext.js</script>
+		<image source="theme">bg_code_tab.png</image>
+		<image source="theme">bg_code_tab.psd</image>
+	</files>
+	<config protected="yes" type="string" name="version" values="5.0,3.20,3.11,3.1,3.02">5.0</config>
+	<config protected="yes" type="string" name="modes">css,xml,javascript,clike,php,htmlmixed,sql</config>
+	<config protected="yes" type="string" name="addons">dialog/dialog,search/search,search/searchcursor,edit/matchbrackets</config>
+	<config protected="yes" type="string" name="themes">elegant</config>
+	<config protected="no" type="boolean" name="auto">yes</config>
+	<config protected="no" type="string" name="auto.selector">textarea.CodeMirror-auto</config>
+	<config protected="no" type="boolean" name="auto.option.lineNumbers">yes</config>
+	<config protected="no" type="boolean" name="auto.option.lineWrapping">no</config>
+	<config protected="no" type="boolean" name="auto.option.indentWithTabs">yes</config>
+	<config protected="no" type="integer" name="auto.option.indentUnit">4</config>
+	<config protected="no" type="boolean" name="auto.option.fullscreen">yes</config>
+	<config protected="no" type="string" name="auto.option.theme">default</config>
+	<hook type="resource" resource="Page" event="applyModules">View_Helper_CodeMirror::___onPageApplyModules</hook>
+</module>

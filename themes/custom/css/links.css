@@ -1,0 +1,93 @@
+	
+.icon-label,
+.link-author,
+.link-map,
+.link-search-image,
+.link-search-map,
+.link-imdb,
+.link-discogs,
+.link-wiki,
+.link-youtube,
+.link-myspace,
+.link-tag,
+.link-blog,
+.link-image,
+.link-download,
+.link-internal,
+.link-external {
+	background-color: rgba(255,250,240,0.5);
+	background-repeat: no-repeat;
+	background-position: 2px 1px;
+	padding: 1px 5px 1px 21px;
+	display: inline !important;
+	vertical-align: baseline !important;
+	margin: 0px !important;
+	}
+/*
+a.icon-label,
+span.icon-label {
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+	border-radius: 2px;
+	}
+a.icon-label:hover,
+span.icon-label:hover {
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+	}
+*/
+
+.link-map,
+.link-search-map {
+	background-image: url(http://img.int1a.net/famfamfam/silk/map.png);
+	}
+.link-search-image {
+	background-image: url(http://img.int1a.net/famfamfam/silk/magnifier.png);
+	}
+.link-imdb {
+	background-image: url(../img/icons/imdb.png);
+	}
+.link-discogs {
+	background-image: url(../img/icons/discogs.png);
+	}
+.link-wiki {
+	background-image: url(../img/icons/wikipedia.png);
+	}
+.link-youtube {
+	background-image: url(../img/icons/youtube.png);
+	}
+.link-myspace {
+	background-image: url(../img/icons/myspace.png);
+	}
+.link-download {
+	background-image: url(http://img.int1a.net/famfamfam/silk/package.png);
+	}
+.link-blog {
+	background-image: url(http://img.int1a.net/famfamfam/silk/comment.png);
+	}
+.link-image {
+	background-image: url(http://img.int1a.net/famfamfam/silk/image.png);
+	}
+.link-tag {
+	background-image: url(http://img.int1a.net/famfamfam/silk/tag_blue.png);
+	}
+.link-author {
+	background-image: url(http://img.int1a.net/famfamfam/silk/user.png);
+	}
+.link-internal,
+.link-external {
+	background-image: url(http://img.int1a.net/famfamfam/silk/link.png);
+	background-position: 2px 2px;
+	}
+.link-feed {
+	background-image: url(http://img.int1a.net/famfamfam/silk/feed.png);
+	}
+.link-archive {
+	background-image: url(http://img.int1a.net/famfamfam/silk/compress.png);
+	}
+.link-mail {
+	background-image: url(http://img.int1a.net/famfamfam/silk/email.png);
+	}
+
+ul.list {
+	list-style: disc !important;
+	margin-left: 1.5em !important;
+	}

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<module>
+	<title>UI: Helper: Content</title>
+	<description><![CDATA[Content converter and format helper.]]></description>
+	<category>User Interface</category>
+	<version install-type="2" install-source="Local_CM_Public" install-date="2015-07-06T21:47:42+02:00">0.2</version>
+	<files>
+		<class>View/Helper/ContentConverter.php5</class>
+		<style source="theme" load="auto">links.css</style>
+		<image source="theme">icons/wikipedia.png</image>
+		<image source="theme">icons/youtube.png</image>
+		<image source="theme">icons/google.png</image>
+		<image source="theme">icons/imdb.png</image>
+		<image source="theme">icons/discogs.png</image>
+		<image source="theme">icons/myspace.png</image>
+	</files>
+	<config protected="yes" type="boolean" name="register.breaks">yes</config>
+	<config protected="yes" type="boolean" name="register.code">yes</config>
+	<config protected="yes" type="boolean" name="register.currencies">yes</config>
+	<config protected="yes" type="boolean" name="register.links">yes</config>
+	<config protected="yes" type="boolean" name="register.links.wiki">yes</config>
+	<config protected="yes" type="boolean" name="register.links.youtube">yes</config>
+	<config protected="yes" type="boolean" name="register.links.imdb">yes</config>
+	<config protected="yes" type="boolean" name="register.links.discogs">yes</config>
+	<config protected="yes" type="boolean" name="register.links.myspace">yes</config>
+	<config protected="yes" type="boolean" name="register.links.map">yes</config>
+	<config protected="yes" type="boolean" name="register.lists">yes</config>
+	<config protected="yes" type="boolean" name="register.search.image">yes</config>
+	<config protected="yes" type="boolean" name="register.search.map">yes</config>
+	<config protected="yes" type="boolean" name="register.text">yes</config>
+	<relations/>
+	<hook type="resource" resource="Page" event="applyModules"><![CDATA[
+$map	= array(
+	'text'			=> "formatText",
+	'currencies'	=> "formatCurrencies",
+	'links'			=> "formatLinks",
+	'links.discogs'	=> "formatDiscogsLinks",
+	'links.imdb'	=> "formatImdbLinks",
+	'links.map'		=> "formatMapLinks",
+	'links.myspace'	=> "formatMyspaceLinks",
+	'links.wiki'	=> "formatWikiLinks",
+	'links.youtube'	=> "formatYoutubeLinks",
+	'search.image'	=> "formatImageSearch",
+	'search.map'	=> "formatMapSearch",
+	'code'			=> "formatCodeBlocks",
+	'breaks'		=> "formatBreaks",
+	'lists'			=> "formatLists",
+);
+$plugins	= $env->getConfig()->getAll( 'module.ui_helper_content.register.' );
+foreach( $map as $key => $method )
+	if( isset( $plugins[$key] ) && $plugins[$key] )
+		View_Helper_ContentConverter::register( 'View_Helper_ContentConverter', $method );
+]]></hook>
+</module>
