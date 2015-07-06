@@ -1,1 +1,46 @@
-/home/kriss/Web/lib/cmFrameworks/modules/Hydrogen/Admin/Instances/css/module.admin.instances.css
+a.instance {
+	font-size: 1.1em;
+	background-image: url(//cdn.int1a.net/img/famfamfam/silk/world.png);
+	background-position: 1px 2px;
+	background-repeat: no-repeat;
+	padding: 1px 0px 1px 22px;
+	}
+
+body.moduleAdminInstance.action-index div.status-box {
+	float: left;
+	min-width: 16px;
+	min-height: 16px;
+	margin: 1px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	opacity: 0.5;
+	cursor: help;
+	}
+body.moduleAdminInstance.action-index div.status-box.status-box-yes {
+	opacity: 1;
+	}
+body.moduleAdminInstance.action-index div.status-box.status-box-no {
+	opacity: 1;
+	}
+body.moduleAdminInstance.action-index div.status-box.status-http{
+	background-image: url(//cdn.int1a.net/img/famfamfam/silk/world.png);
+	}
+body.moduleAdminInstance.action-index div.status-box.status-http.status-box-yes{
+	background-image: url(//cdn.int1a.net/img/famfamfam/silk/world_add.png);
+	}
+body.moduleAdminInstance.action-index div.status-box.status-http.status-box-no{
+	background-image: url(//cdn.int1a.net/img/famfamfam/silk/world_delete.png);
+	}
+body.moduleAdminInstance.action-index div.status-box.status-file{
+	background-image: url(//cdn.int1a.net/img/famfamfam/silk/server_link.png);
+	}
+body.moduleAdminInstance.action-index div.status-box.status-file.status-box-yes{
+	background-image: url(//cdn.int1a.net/img/famfamfam/silk/server_add.png);
+	}
+body.moduleAdminInstance.action-index div.status-box.status-file.status-box-no{
+	background-image: url(//cdn.int1a.net/img/famfamfam/silk/server_delete.png);
+	}
+
+body.moduleAdminInstance.action-index table td.label {
+	padding: 0.25em 0.75em;
+	}
