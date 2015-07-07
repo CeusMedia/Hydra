@@ -1,7 +1,7 @@
 <?php
 function _detectVendorPath(){
 	if( file_exists( __DIR__.'/vendor/' ) )
-		return 'vendor/';
+		return __DIR__.'/vendor/';
 	$outer	= dirname( dirname( __DIR__ ) );
 	if( basename( $outer ) === 'vendor' )
 		return $outer.'/';
@@ -9,7 +9,6 @@ function _detectVendorPath(){
 }
 
 $pathLibraries	= _detectVendorPath();
-
 require_once $pathLibraries.'autoload.php';
 
 /*  --  BOOT  --  */

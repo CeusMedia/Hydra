@@ -195,7 +195,7 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 
 	protected function checkThemes(){
 		if( !file_exists( 'themes/petrol' ) ){
-			$source	= CMF_PATH.'themes/Hydrogen/petrol';
+			$source	= CML_PATH.'ceus-media/hydrogen-themes/petrol';
 			$target	= $this->uri.'themes/petrol';
 			if( !file_exists( 'themes' ) )
 				FS_Folder_Editor::createFolder( 'themes', 0770 );

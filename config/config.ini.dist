@@ -20,5 +20,5 @@ layout.theme		= "custom"
 locale.allowed		= "de,en"
 locale.default		= "de"
 
-system.cache.modules		= yes
+system.cache.modules		= no
 
