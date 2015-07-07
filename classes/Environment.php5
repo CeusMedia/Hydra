@@ -146,7 +146,8 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 			if( $list){
 				foreach( $list as $moduleId => $settings){
 					$module		= $logic->getModule( $moduleId );
-					$type		= Logic_Module::INSTALL_TYPE_LINK;
+//					$type		= Logic_Module::INSTALL_TYPE_LINK;
+					$type		= Logic_Module::INSTALL_TYPE_COPY;
 					$message	= $this->words['msg']['moduleAutoInstalled'];
 					$logic->installModule( $module->source, $moduleId, $type, $settings, TRUE );
 					$this->messenger->noteNotice( $message, $module->title );
@@ -186,7 +187,7 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 		}
 		$data	= json_decode( FS_File_Reader::load( $fileName ), TRUE );
 		if( empty( $data['Local_CM_Public']['path'] ) ){
-			$data['Local_CM_Public']['path']	= CMF_PATH.'modules/Hydrogen/';
+			$data['Local_CM_Public']['path']	= CML_PATH.'ceus-media/hydrogen-framework/';
 			$json	= ADT_JSON_Formater::format( json_encode( $data ) );
 			FS_File_Writer::save( $fileName, $json );
 		}
