@@ -1,6 +1,5 @@
 vendor
 composer.lock
-
 config/config.ini
 config/modules.cache.serial
 tmp

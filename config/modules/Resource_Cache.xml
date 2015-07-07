@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<module>
+	<title>Resource: Cache</title>
+	<description><![CDATA[Cache resource.
+]]></description>
+	<category>Resource</category>
+	<version install-type="2" install-source="Local_CM_Public" install-date="2015-07-07T11:00:19+02:00">0.3.3</version>
+	<company site="http://ceusmedia.de/">Ceus Media</company>
+	<author email="christian.wuerker@ceusmedia.de">Christian W&#xFC;rker</author>
+	<license source="http://www.gnu.org/licenses/gpl-3.0.txt">GPL 3</license>
+	<files>
+		<class>Model/Cache.php5</class>
+	</files>
+	<config protected="yes" type="boolean" name="enabled">no</config>
+	<config protected="yes" type="string" name="type" mandatory="yes" values="Folder,Memcache,Memory,Noop,PDO,Session">Folder</config>
+	<config protected="yes" type="string" name="resource">tmp/cache/</config>
+	<config protected="yes" type="string" name="context"/>
+	<config protected="yes" type="integer" name="expiration"/>
+	<relations>
+	</relations>
+	<hook type="event" resource="Env" event="initCache"><![CDATA[
+        $env->set( 'cache', new Model_Cache( $env ) );
+]]></hook>
+	<sql on="install" type="mysql"><![CDATA[
+DROP TABLE IF EXISTS `<%?prefix%>cache`;
+CREATE TABLE IF NOT EXISTS `<%?prefix%>cache` (
+  `cacheId` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `context` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `value` mediumtext COLLATE utf8_unicode_ci,
+  `timestamp` decimal(12,0) unsigned NOT NULL,
+  `expiration` decimal(12,0) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`cacheId`),
+  KEY `context` (`context`),
+  KEY `hash` (`hash`),
+  KEY `timestamp` (`timestamp`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+]]></sql>
+	<sql on="uninstall" type="mysql"><![CDATA[
+DROP TABLE IF EXISTS `<%?prefix%>cache`;
+]]></sql>
+</module>

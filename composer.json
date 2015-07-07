@@ -20,6 +20,7 @@
   "require": {
     "php": ">=5.3.0",
     "ceus-media/common": "dev-master",
+    "ceus-media/cache": "dev-master",
     "ceus-media/hydrogen-framework": "dev-master",
     "ceus-media/hydrogen-modules": "dev-master",
     "ceus-media/hydrogen-themes": "dev-master",

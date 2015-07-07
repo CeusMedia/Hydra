@@ -187,7 +187,7 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 		}
 		$data	= json_decode( FS_File_Reader::load( $fileName ), TRUE );
 		if( empty( $data['Local_CM_Public']['path'] ) ){
-			$data['Local_CM_Public']['path']	= CML_PATH.'ceus-media/hydrogen-framework/';
+			$data['Local_CM_Public']['path']	= CML_PATH.'ceus-media/hydrogen-modules/';
 			$json	= ADT_JSON_Formater::format( json_encode( $data ) );
 			FS_File_Writer::save( $fileName, $json );
 		}
