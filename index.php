@@ -1,12 +1,13 @@
 <?php
 /*  --  LIBRARY SETTINGS  --  */
-$pathLibraries	= '';
-$versionCMC		= 'CeusMedia/Common';
-$versionCMF		= 'CeusMedia/HydrogenFramework';
-$versionCMM		= 'CeusMedia/';
+$pathLibraries	= './vendor/';
+$versionCMC		= 'ceus-media/common';
+$versionCMF		= 'ceus-media/hydrogen-framework';
+$versionCMM		= 'ceus-media/';
 $autoloadPaths	= array(
 	array( 'path' => 'classes/', 'prefix' => 'Tool_Hydrogen_Setup_' ),
 	array( 'path' => 'classes/', 'prefix' => NULL ),
+	array( 'path' => 'vendor/kriss0r/php-diff', 'prefix' => NULL ),
 );
 
 
