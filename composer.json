@@ -17,6 +17,12 @@
     "jabber": "ceus-media@jabber.org"
   },
   "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:kriss0r/php-diff.git"
+    }
+  ],
   "require": {
     "php": ">=5.3.0",
     "ceus-media/common": "dev-master",
@@ -24,7 +30,8 @@
     "ceus-media/hydrogen-framework": "dev-master",
     "ceus-media/hydrogen-modules": "dev-master",
     "ceus-media/hydrogen-themes": "dev-master",
-    "michelf/php-markdown": "1.5.0"
+    "michelf/php-markdown": "1.5.0",
+    "kriss0r/php-diff": "dev-master"    
   },
   "autoload": {
     "classmap": ["classes/"]
