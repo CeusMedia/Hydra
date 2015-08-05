@@ -1,0 +1,14 @@
+{
+    "name": "ceus-media/hydra",
+    "require": {
+        "ceus-media/common": "dev-master"
+    },
+    "license": "GPL 3.0",
+    "authors": [
+        {
+            "name": "Christian Würker",
+            "email": "christian.wuerker@ceusmedia.de"
+        }
+    ],
+    "minimum-stability": "dev"
+}
