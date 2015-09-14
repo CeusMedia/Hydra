@@ -31,7 +31,7 @@
     "ceus-media/hydrogen-modules": "dev-master",
     "ceus-media/hydrogen-themes": "dev-master",
     "michelf/php-markdown": "1.5.0",
-    "chrisboulton/php-diff": "dev-master"    
+    "phpspec/php-diff": "dev-master"    
   },
   "autoload": {
     "classmap": ["classes/"]
