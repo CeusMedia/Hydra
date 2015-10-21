@@ -1,0 +1,22 @@
+/*  --  HEADER  --  */
+#layout-header {
+	background: #FFF;
+	height: 60px;
+	}
+#layout-header-inner {
+	}
+#layout-header-inner h1 {
+	padding: 10px 0px 0px 75px;
+	color: #000;
+	text-shadow: #777 1px 1px 1px;
+	margin: 0px;
+	}
+#layout-header-inner p {
+	padding: 0px 0px 0px 75px;
+	margin: 0px;
+	color: #333;
+	font-size: 1.0em;
+/*	font-style: italic;*/
+/*	text-shadow: #bbb 1px 1px 1px;*/
+	}
+

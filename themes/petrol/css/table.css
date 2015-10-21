@@ -1,0 +1,40 @@
+fieldset table {
+	margin: 0px;
+	}
+
+table {
+	width: 100%;
+	}
+table tr {
+	}
+table th,
+table td {
+	vertical-align: top;
+	}
+table tr th {
+	background: none;
+	border-bottom: 1px solid #CCC;
+	}
+table tr th.multiple {
+	background: none;
+	border-bottom: 1px dotted #CCC;
+	}
+table tr.even td {
+	background-color: #EEEEEE;
+	background-color: #FFF;
+	/* override blueprint typography setting */
+	background-repeat: no-repeat;
+	background-position: none;
+	}
+table tr.odd td {
+	background-color: #FFFFFF;
+	background-color: #F7F7F7;
+	}
+
+table button {
+	font-size: 0.8em;
+	}
+
+table tr td.actions {
+	padding: 2px 0px 0px 0px		
+	}

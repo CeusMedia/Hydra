@@ -1,0 +1,154 @@
+/*  --  SELECT BOXES  --  */
+.menu.select,
+.menu.select * {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	text-align: left;
+	}
+
+.menu.select {
+	position: relative;
+	display: inline;
+	}
+
+.menu.select img {
+	margin-top: 4px;
+	margin-left: 1px;
+	vertical-align: top;
+	}
+
+.menu.select ul {
+	list-style-type: none;
+	z-index: 1;
+    display: block;
+/*	display: compact; */
+	}
+
+.menu.select li {
+	float: left;
+	position: relative;
+	}
+
+.menu.select ul li ul {
+	display: none;
+	padding: 0px;
+	z-index: 2;
+	}
+
+.menu.select ul li a {
+	float: left;
+	width: 130px;
+	height: 19px;
+	text-decoration: none;
+	color: #000;
+/*	font-size: 0.9em;*/
+	}
+.menu.select ui li a span {
+
+	}
+.menu.select ul li a:hover {
+	}
+.menu.select ul li:hover>a {
+	}
+
+.menu.select ul li table {
+	margin: -1px 0px;
+/*	margin: 0px; */
+	border-collapse: collapse;
+	}
+
+.menu.select span.group,
+.menu.select span.option {
+	padding: 1px 3px;
+	height: 19px;
+	}
+.menu.select span.group {
+	font-weight: bold;
+	font-style: italic;
+	}
+.menu.select span.grouped.option {
+	padding-left: 1em;
+	}
+
+/*  --  LEVEL 1  --  */
+
+.menu.select a.level-1 {
+	background-color: #FFF;
+	background-image: url(../images/drop_down_3-3.png);
+	background-repeat: no-repeat;
+	background-position: right -2px;
+/*	background-position: 118px 4px;*/
+	border: 1px solid #000;
+	text-decoration: none;
+	color: black;
+	outline: none;
+	cursor: default;
+	border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border:1px solid #CCCCCC;
+	}
+
+.menu.select a.level-1 {
+	}
+
+/*  --  LEVEL 2  --  */
+.menu.select ul li:hover ul,
+.menu.select ul li a:hover ul {
+	display: block;
+	position: absolute;
+	margin: 0px;
+	top: 20px;
+	left: 0px;
+	width: 130px;
+	height: auto;
+	border-style: solid;
+	border-color: #000;
+	border-width: 0px 1px 1px 1px;
+	background-color: #EFEFEF;
+	color: #000;
+	border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border: 1px solid #CCCCCC;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	}
+
+.menu.select ul li:hover ul li a,
+.menu.select ul li a:hover ul li a {
+	height: auto;
+	}
+
+.menu.select ul li:hover ul li:hover a,
+.menu.select ul li a:hover ul li a:hover {
+	width: 130px;
+	background-color: #DDD;
+
+	}
+
+
+
+/*  --  SEVERAL SIZES  --  */
+.menu.select.s ul li a,
+.menu.select.s ul li:hover ul,
+.menu.select.s ul li a:hover ul,
+.menu.select.s ul li:hover ul li:hover a,
+.menu.select.s ul li a:hover ul li a:hover {
+	width: 80px;
+	}
+.menu.select.m ul li a,
+.menu.select.m ul li:hover ul,
+.menu.select.m ul li a:hover ul,
+.menu.select.m ul li:hover ul li:hover a,
+.menu.select.m ul li a:hover ul li a:hover {
+	width: 120px;
+	}
+.menu.select.l ul li a,
+.menu.select.l ul li:hover ul,
+.menu.select.l ul li a:hover ul,
+.menu.select.l ul li:hover ul li:hover a,
+.menu.select.l ul li a:hover ul li a:hover {
+	width: 180px;
+	}

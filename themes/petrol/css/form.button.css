@@ -1,0 +1,209 @@
+button {
+	cursor: pointer;
+	}
+
+.button {
+	padding: 3px 10px;
+	background-color: #DDD;
+	background-image: url(../images/background_button_gradient_1.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #CCCCCC #999999 #999999 #CCCCCC;
+	border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	font-size: 1em;
+	cursor: pointer;
+	outline: none;
+/*
+	font-size: 1em;
+*/
+	}
+.button:focus,
+.button:hover {
+	background-position: 0 -7px;
+	}
+.button[disabled],
+.button[disabled]:active,
+.button[disabled]:focus,
+.button[disabled]:hover,
+.button[readonly],
+.button[readonly]:active,
+.button[readonly]:focus,
+.button[readonly]:hover {
+	cursor: default !important;
+	border-color: #999999 #999999 !important;
+	background-position: 0 -7px !important;
+	}
+.button:active {
+	border-color: #999999 #CCCCCC #CCCCCC #999999;
+	background-position: 0 -7px;
+	}
+.button:focus {							/*  IE */
+	outline : none;
+    }
+.button::-moz-focus-inner {				/*  Firefox */
+	border: 0;
+	}
+
+.button.save {
+	background-color: #DFB;
+	}
+.button.cancel {
+	background-color: #FFD;
+	}
+.button.delete {
+	background-color: #FCB;
+	}
+
+
+/*  BUTTON ICONS  */
+button.icon span,
+button.accept span,
+button.ban span,
+button.decline span,
+button.disable span,
+button.kick span,
+button.add span,
+button.cancel span,
+button.close span,
+button.delete span,
+button.edit span,
+button.exit span,
+button.filter span,
+button.lock span,
+button.unlock span,
+button.open span,
+button.remove span,
+button.reset span,
+button.search span,
+button.more span,
+button.less span,
+button.calendar span,
+button.date span,
+button.magic span,
+button.wizard span,
+button.update span,
+button.save span {
+	display: block;
+	min-height: 16px;
+	background-repeat: no-repeat;
+	background-position: -1px 0px;
+	padding-left: 20px;
+	padding-right: 4px;
+	outline: none;
+	}
+button.accept span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/accept.png);
+	}
+button.add span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/add.png);
+	}
+button.cancel span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/arrow_left.png);
+	}
+button.close span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/arrow_down.png);
+	background-image: url(http://img.int1a.net/famfamfam/silk/door.png);
+	}
+button.decline span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/cancel.png);
+	}
+button.edit span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/pencil.png);
+	}
+button.exit span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/door_out.png);
+	}
+button.kick span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/exclamation.png);
+	}
+button.save span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/accept.png);
+	}
+button.search span,
+button.filter span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/magnifier.png);
+	}
+button.lock span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/lock.png);
+	background-position: -1px 0px;
+	}
+button.unlock span {
+	background-image: url(/lib/cmIcons/famfamfam/silk/lock_break.png);
+	background-position: -1px 0px;
+	}
+button.open span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/arrow_up.png);
+	background-image: url(http://img.int1a.net/famfamfam/silk/door_open.png);
+	}
+button.delete span,
+button.remove span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/delete.png);
+	}
+button.reset span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/bin_closed.png);
+	}
+button.more span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/bullet_arrow_down.png);
+	}
+button.less span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/bullet_arrow_up.png);
+	}
+button.calendar span,
+button.date span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/calendar.png);
+	}
+button.magic span,
+button.wizard span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/wand.png);
+	}
+button.update span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/layers.png);
+	background-image: url(http://img.int1a.net/famfamfam/silk/pill.png);
+	background-image: url(http://img.int1a.net/famfamfam/silk/arrow_up.png);
+	}
+button.filter.add span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/magnifier_zoom_in.png);
+	}
+button.filter.remove span {
+	background-image: url(http://img.int1a.net/famfamfam/silk/magnifier_zoom_out.png);
+	}
+
+
+/*  BUTTON BAR  */
+.buttonbar {
+	clear: both;
+	margin-top: 0.5em;
+	border-top: 1px solid #CCC;
+	padding-top: 0.5em;
+	}
+
+.buttonbar .right {
+	float: right;
+	}
+
+
+button[readonly],
+button[disabled] {
+	opacity: 0.5;
+	color: black;
+	cursor: default !important;
+	}
+
+button.tiny,
+button.tiny:hover,
+button.tiny:active {
+	margin: 0px 1px 0px 0px;
+	padding: 1px 2px 1px 3px;
+	}
+
+button.tiny span {
+    margin: 0;
+    padding: 0;
+    min-width: 15px;
+    height: 16px;
+	float: left;
+	display: block;
+	}

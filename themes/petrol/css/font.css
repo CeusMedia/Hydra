@@ -1,0 +1,100 @@
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: normal;
+	font-style: normal;
+	src: url(../fonts/Ubuntu-R.eot);
+	}
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: normal;
+	font-style: italic;
+	src: url(../fonts/Ubuntu-I.eot);
+	}
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	font-style: normal;
+	src: url(../fonts/Ubuntu-B.eot);
+	}
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	font-style: italic;
+	src: url(../fonts/Ubuntu-BI.eot);
+	}
+
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: normal;
+	font-style: normal;
+	src: url(../fonts/Ubuntu-R.ttf) format("truetype");
+	}
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: normal;
+	font-style: italic;
+	src: url(../fonts/Ubuntu-I.ttf) format("truetype");
+	}
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	font-style: normal;
+	src: url(../fonts/Ubuntu-B.ttf) format("truetype");
+	}
+@font-face {
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	font-style: italic;
+	src: url(../fonts/Ubuntu-BI.ttf) format("truetype");
+	}
+
+@font-face {
+	font-family: 'Ubuntu Regular';
+	src: url(../fonts/Ubuntu-R.eot);
+	}
+@font-face {
+	font-family: 'Ubuntu Italic';
+	src: url(../fonts/Ubuntu-I.eot);
+	}
+@font-face {
+	font-family: 'Ubuntu Bold';
+	src: url(../fonts/Ubuntu-B.eot);
+	}
+@font-face {
+	font-family: 'Ubuntu Bold Italic';
+	src: url(../fonts/Ubuntu-BI.eot);
+	}
+@font-face {
+	font-family: 'Ubuntu Regular';
+	src: url(../fonts/Ubuntu-R.ttf) format("truetype");
+	}
+@font-face {
+	font-family: 'Ubuntu Italic';
+	src: url(../fonts/Ubuntu-I.ttf) format("truetype");
+	}
+@font-face {
+	font-family: 'Ubuntu Bold';
+	src: url(../fonts/Ubuntu-B.ttf) format("truetype");
+	}
+@font-face {
+	font-family: 'Ubuntu Bold Italic';
+	src: url(../fonts/Ubuntu-BI.ttf) format("truetype");
+	}
+
+
+html,
+body,
+button,
+input,
+select {
+	font-family: "Ubuntu", "Helvetica Neue", "Helvetica", "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+	color: #333;
+	}
+
+body {
+	font-size: 80%
+	}
+
+h1,h2,h3,h4,h5 {
+	}
+

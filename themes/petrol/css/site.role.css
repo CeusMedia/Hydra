@@ -1,0 +1,108 @@
+
+.role.role1,
+.role.role2,
+.role.role3,
+.role.role4 {
+	background-repeat: no-repeat;
+	background-position: 2px 1px;
+	padding-left: 1.8em;
+	}
+
+.role.role1,
+.role.role2 {
+	background-image: url(//img.int1a.net/famfamfam/silk/user_gray.png);
+	}
+.role.role3 {
+	background-image: url(//img.int1a.net/famfamfam/silk/user_suit.png);
+	}
+.role.role4 {
+	background-image: url(//img.int1a.net/famfamfam/silk/user_green.png);
+	}
+
+.role-access {
+	background-repeat: no-repeat;
+	background-position: 2px 1px;
+	padding-left: 1.8em;
+	}
+.role-access.access0 {
+	background-image: url(//img.int1a.net/famfamfam/silk/stop.png);
+	}
+.role-access.access64 {
+	background-image: url(//img.int1a.net/famfamfam/silk/shield.png);
+	}
+.role-access.access128 {
+	background-image: url(//img.int1a.net/famfamfam/silk/world.png);
+	}
+
+.controller-role.action-edit .column-left {
+	float: left;
+	width: 65%;
+	}
+.controller-role.action-edit .column-right {
+	float: right;
+	width: 33%;
+	}
+
+.controller-role.action-edit ul.right-controllers{
+	margin-left: 2em;
+	list-style-position: inside;
+	list-style-type: none;
+	}
+.controller-role.action-edit ul.right-controllers>li.right-controller{
+	}
+.controller-role.action-edit ul.right-controllers>li.right-controller>span.label{
+	font-size: 1.1em;
+	font-weight: bold;
+	background-image: url(//img.int1a.net/famfamfam/silk/chart_organisation.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	padding-left: 22px;
+	}
+.controller-role.action-edit ul.right-controllers>li.right-controller>ul.right-actions{
+	margin-left: 20px;
+	list-style-position: inside;
+	list-style-type: none;
+	}
+.controller-role.action-edit ul.right-controllers>li.right-controller>ul.right-actions>li.right-action{
+	}
+.controller-role.action-edit ul.right-controllers>li.right-controller>ul.right-actions>li.right-action>span.label{
+	background-image: url(//img.int1a.net/famfamfam/silk/bullet_green.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	padding-left: 20px;
+	}
+.controller-role.action-edit ul.right-controllers>li.right-controller>ul.right-actions>li.right-action>span.remove{
+	float: right;
+	}
+
+
+
+#role-edit-rights {}
+#role-edit-rights li {
+	float: left;
+	display: block;
+	padding: 0px 4px;
+	margin-right: 1px;
+	font-size: 0.9em;
+	color: #3F3F3F;
+	}
+#role-edit-rights li.changable {
+	color: black;
+	cursor: pointer;
+	}
+#role-edit-rights li.changable label {
+	cursor: pointer;
+	}
+#role-edit-rights li.green {
+	background-color: #BFFFBF;
+	}
+#role-edit-rights li.green.changable {
+	background-color: #7FFF7F;
+	}
+#role-edit-rights li.red {
+	background-color: #FFBFBF;
+	}
+#role-edit-rights li.red.changable {
+	background-color: #FF7F7F;
+	}
+

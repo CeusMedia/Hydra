@@ -1,0 +1,6 @@
+#<FilesMatch "\.ttf$">
+#	Header set Content-Type "application/x-font-truetype"
+#</FilesMatch>
+#<FilesMatch "\.otf$">
+#	Header set Content-Type "application/x-font-opentype"
+#</FilesMatch>

@@ -1,0 +1,50 @@
+div.indicator {
+	}
+div.indicator span.indicator-outer {
+	display: block;
+	width: 100px;
+	border: 1px solid darkgray;
+	background-color: rgb(255, 255, 255);
+	}	
+div.indicator div.indicator-inner {
+	height: 12px;
+	}	
+div.indicator span.indicator-percentage {
+	display: none;
+	font-family: tahoma;
+	font-size: 11px;
+	position: absolute;
+	top: 4px;
+	right: 8px;	
+	}
+
+
+div.indicator-small {
+	border: none;
+	background: none;
+	width: 150px;
+	display: block;
+	position: relative;
+	}
+div.indicator-small span.indicator-outer {
+	border: 1px solid black;
+	width: 100px;
+	display: block;
+	background-color: rgb(245, 245, 245);
+	-moz-user-focus: normal;
+	-moz-border-bottom-colors: rgb(220, 223, 228) white;
+	-moz-border-left-colors: rgb(133, 135, 140) rgb(167, 166, 170);
+	-moz-border-top-colors: rgb(133, 135, 140) rgb(167, 166, 170);
+	-moz-border-right-colors: rgb(220, 223, 228) white;
+	}
+div.indicator-small div.indicator-inner {
+	height: 10px;
+/*	background-image: url(../images/bar.png);*/
+	}
+div.indicator-small span.indicator-percentage,
+div.indicator-small span.indicator-ratio {
+	position: absolute;
+	top: -1px;
+	left: 110px;
+	font-size: 0.8em;
+	}

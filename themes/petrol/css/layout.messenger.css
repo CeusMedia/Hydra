@@ -1,0 +1,81 @@
+/*  --  MESSENGER MESSAGES  --  */
+
+
+/*  --  messenger  --  */
+#layout-messenger>ul {
+	margin: 0.5em 0em 1em 0em;
+	padding: 0px;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: gray;
+	border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	list-style:none;
+	margin: 0px auto;
+	overflow: hidden;
+	}
+
+#layout-messenger>ul>li {
+	padding: 0.5em 1em 0.5em 3em;
+	background-repeat: no-repeat;
+	background-position: 0.9em 0.6em;
+	font-size: 1.1em;
+	}
+
+#layout-messenger ul li.failure {
+	background-color: #DDD;
+	background-color: #FBA;
+	background-image: url(//img.int1a.net/famfamfam/silk/cancel.png);
+	}
+#layout-messenger ul li.error {
+	background-color: #FCB;
+	background-image: url(//img.int1a.net/famfamfam/silk/error.png);
+	}
+#layout-messenger ul li.notice {
+	background-color: #FFD;
+	background-color: #DDD;
+	background-color: #EEE;
+	background-color: #FFC;
+	background-image: url(//img.int1a.net/famfamfam/silk/information.png);
+	}
+#layout-messenger ul li.success {
+	background-color: #DFB;
+	background-image: url(//img.int1a.net/famfamfam/silk/accept.png);
+	}
+
+#layout-messages .time {
+	}
+
+#layout-messenger div.exception-view {
+	opacity: 0.75;
+	border: 1px solid #555;
+	background: white;
+	font-size: 1.0em;
+	padding: 0.3em 0.6em;
+	}
+
+#layout-messenger ul li label {
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	}
+
+#layout-messenger > ul > li > div.button {
+	opacity: 0;
+	}
+#layout-messenger > ul > li:hover > div.button {
+	opacity: 0.65;
+	}
+#layout-messenger > ul > li div.button.discard {
+	float: right;
+	padding: 1px 2px;
+	}
+#layout-messenger > ul > li div.button.discard:hover {
+	opacity: 1;
+	}
+#layout-messenger div.button.discard span {
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-image: url(http://img.int1a.net/famfamfam/silk/cross.png);
+	background-repeat: no-repeat;
+	}
+

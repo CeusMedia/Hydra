@@ -1,0 +1,39 @@
+/*  --  FOOTER  --  */
+#layout-footer {
+	clear: both;
+	position: relative;
+	width: 100%;
+	padding: 1em 0em 1em 0em;
+	background-color: #FFF;
+	border-top: 3px solid #008FAF;
+	}
+#layout-footer-inner {
+	position: relative;
+	padding: 0px 10px;
+	width: 980px;
+	margin: 0 auto;
+	font-size: 0.9em;
+	}
+#layout-footer-inner li {
+	float: left;
+	list-style-type: none;
+	border-right: 1px solid #BBB;
+	margin: 5px 0px 0px 12px;
+	padding: 0px 15px 0px 0px;
+	}
+#layout-footer-inner li:last-child {
+	border: 0px;
+	}
+#layout-footer #footer-info {
+	}
+#layout-footer #footer-badges {
+	}
+#layout-footer #footer-badges span {
+	padding-left: 1em;
+	}
+#layout-footer #footer-badges img {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	}
+

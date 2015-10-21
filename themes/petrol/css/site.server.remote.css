@@ -1,0 +1,39 @@
+#site-server-remote #server-requester {
+	float: left;
+	width: 21em;
+	}
+
+#site-server-remote #json-viewer {
+	margin-left: 23em;
+	}
+
+#site-server-remote #json-viewer #json-tree {
+	float: left;
+	width: 22em;
+	}
+#site-server-remote #json-viewer #json-data {
+	margin-left: 23em;
+	}
+
+#site-server-remote form#server-request ul {
+	margin: 0px;
+	padding: 0px;
+	}
+#site-server-remote form#server-request ul li {
+	list-style: none;
+	}
+#site-server-remote form#server-request ul li label {
+	display: block;
+	}
+#site-server-remote form#server-request ul li label span.parameter-type {
+	padding-right: 1em;
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 0.8em;
+	}
+
+#site-server-remote form#server-request input,
+#site-server-remote form#server-request select,
+#site-server-remote form#server-request textarea {
+	width: 98%;
+	}
