@@ -23,10 +23,7 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 
 		$this->pathConfig	= '';
 
-		$pathModules	= dirname( __DIR__ ).'/vendor/ceus-media/hydrogen-modules/';				//  
-		if( !preg_match( '/^\//', $pathModules ) )													//  module path is not absolute @todo kriss: remove
-			$pathModules	= getEnv( 'DOCUMENT_ROOT' ).'/'.$pathModules;							//  prepend document root to module path @todo kriss: remove
-		$this->pathModules	= $pathModules;															//  store module path @todo kriss: remove
+		$this->pathModules	= dirname( __DIR__ ).'/vendor/ceus-media/hydrogen-modules/';			//  get path to public modules
 
 		$this->path			= dirname( getEnv( 'SCRIPT_FILENAME' ) ).'/';
 		if( isset( $options['pathApp'] ) )
@@ -37,12 +34,12 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 		$this->initModules();																		//  setup module support
 
 		if( !$this->getModules()->has( 'Admin_Module_Sources' ) )									//  source administration module not installed yet
-			require_once $pathModules.'Admin/Module/Sources/classes/Model/ModuleSource.php5';		//  load atleast module source model class
+			require_once $this->pathModules.'Admin/Module/Sources/classes/Model/ModuleSource.php5';	//  load atleast module source model class
 		if( !$this->getModules()->has( 'Admin_Instances' ) )										//  instance administration module not installed yet
-			require_once $pathModules.'Admin/Instances/classes/Model/Instance.php5';				//  load atleast instance model class
+			require_once $this->pathModules.'Admin/Instances/classes/Model/Instance.php5';			//  load atleast instance model class
 		if( !$this->getModules()->has( 'Admin_Modules' ) ){											//  module administration module not installed yet
-			require_once $pathModules.'Admin/Modules/classes/Model/Module.php5';					//  load atleast module model class
-			require_once $pathModules.'Admin/Modules/classes/Logic/Module.php5';					//  and module logic class for installating missing modules
+			require_once $this->pathModules.'Admin/Modules/classes/Model/Module.php5';				//  load atleast module model class
+			require_once $this->pathModules.'Admin/Modules/classes/Logic/Module.php5';				//  and module logic class for installating missing modules
 		}
 
 		$this->initSession();																		//  setup session support
@@ -188,7 +185,7 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 		}
 		$data	= json_decode( File_Reader::load( $fileName ), TRUE );
 		if( empty( $data['Local_CM_Public']['path'] ) ){
-			$data['Local_CM_Public']['path']	= 'vendor/ceus-media/hydrogen-modules/';
+			$data['Local_CM_Public']['path']	= realpath( 'vendor/ceus-media/hydrogen-modules/' ).'/';
 			$json	= ADT_JSON_Formater::format( json_encode( $data ) );
 			File_Writer::save( $fileName, $json );
 		}
