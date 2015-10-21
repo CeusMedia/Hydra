@@ -127,13 +127,15 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 				'Admin_Module_Installer'	=> array(),
 				'Admin_Module_Editor'		=> array(),
 				'Admin_Module_Creator'		=> array(),
+				'JS_CodeMirror'				=> array(),
+				'JS_jQuery'					=> array(),
+				'JS_jQuery_UI'				=> array(),
+				'JS_Layer'					=> array(),
 				'UI_Helper_Content'			=> array(),
 				'UI_CSS_Reset'				=> array(),
 				'UI_DevLayers'				=> array(),
 				'UI_Indicator'				=> array(),
-				'JS_jQuery'					=> array(),
-				'JS_jQuery_UI'				=> array(),
-				'JS_Layer'					=> array(),
+				'UI_LockLayer'				=> array(),
 			);
 			$list	= array();
 			foreach( $modules as $moduleId => $settings )
