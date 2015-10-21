@@ -23,7 +23,7 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 
 		$this->pathConfig	= '';
 
-		$pathModules	= CMF_PATH.'modules/Hydrogen/';												//  
+		$pathModules	= dirname( __DIR__ ).'/vendor/ceus-media/hydrogen-modules/';				//  
 		if( !preg_match( '/^\//', $pathModules ) )													//  module path is not absolute @todo kriss: remove
 			$pathModules	= getEnv( 'DOCUMENT_ROOT' ).'/'.$pathModules;							//  prepend document root to module path @todo kriss: remove
 		$this->pathModules	= $pathModules;															//  store module path @todo kriss: remove
@@ -114,9 +114,9 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 
 		try{
 			$modules	= array(
-				'Resource_Library_cmModules'	=> array(
+	/*			'Resource_Library_cmModules'	=> array(
 					'path'	=> CMF_PATH,
-				),
+				),*/
 				'Resource_Cache'			=> array(
 					'type'		=> 'Folder',
 					'resource'	=> 'tmp/cache/'
@@ -146,6 +146,7 @@ class Tool_Hydrogen_Setup_Environment extends CMF_Hydrogen_Environment_Web{
 			if( $list){
 				foreach( $list as $moduleId => $settings){
 					$module		= $logic->getModule( $moduleId );
+print_m( $moduleId );
 					$type		= Logic_Module::INSTALL_TYPE_LINK;
 					$message	= $this->words['msg']['moduleAutoInstalled'];
 					$logic->installModule( $module->source, $moduleId, $type, $settings, TRUE );

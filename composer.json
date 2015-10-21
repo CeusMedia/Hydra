@@ -1,7 +1,11 @@
 {
     "name": "ceus-media/hydra",
     "require": {
-        "ceus-media/common": "dev-master"
+        "ceus-media/common": "dev-master",
+        "ceus-media/hydrogen-framework": "dev-master",
+        "ceus-media/hydrogen-modules": "dev-master",
+        "ceus-media/mail": "dev-master",
+        "ceus-media/bootstrap": "dev-master"
     },
     "license": "GPL 3.0",
     "authors": [

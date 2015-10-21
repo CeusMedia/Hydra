@@ -29,7 +29,7 @@ $space		= min( 2, $diskFree / $diskTotal * 10 ) / 2;
 $indicator	= new UI_HTML_Indicator();
 $space		= $indicator->build( $space, 1 );
 
-$configCMC	= parse_ini_file( CMC_PATH.'../cmClasses.ini', TRUE );
+$configCMC	= parse_ini_file( CMC_PATH.'../Common.ini', TRUE );
 $versionCMC	= $configCMC['project']['version'];
 
 $cores		= countCores();
@@ -51,10 +51,9 @@ $panel	= '
 			<ul>
 				<li>'.$_SERVER['SERVER_SOFTWARE'].'</li>
 				<li>PHP/'.phpversion().'</li>
-				<li>cmClasses/'.$versionCMC.' <span class="small">(rev '.getRevision( CMC_PATH ).')</span></li>
-				<li>cmFrameworks <span class="small">(rev '.getRevision( CMF_PATH ).')</span></li>
-				<li>cmModules <span class="small">(rev '.getRevision( CMM_PATH ).')</span></li>
-				<li>Hydra/'.$config->get( 'app.version' ).' <span class="small">(rev '.getRevision().')</span></li>
+				<li>cmClasses/'.$versionCMC.'</li>
+				<li>cmFrameworks</li>
+				<li>Hydra/'.$config->get( 'app.version' ).'</li>
 			</ul>
 		</dd>
 		<dt>Cache</dt><dd>
