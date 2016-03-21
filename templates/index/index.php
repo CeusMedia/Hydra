@@ -4,7 +4,7 @@ extract( $view->populateTexts( array( 'home' ), 'html/index/' ) );
 $panelList		= $view->loadTemplate( 'index', 'index.instances' );
 $panelSystem	= $view->loadTemplate( 'index', 'index.system' );
 
-if( $instanceId )
+if( $instanceId && !empty( $instance ) )
 {
 	return $view->loadTemplate( 'index', 'index.instance' , array(
 		'panelList'		=> $panelList,
