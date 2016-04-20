@@ -1,7 +1,7 @@
 {
     "name": "ceus-media/hydra",
     "require": {
-        "ceus-media/common": "dev-master",
+        "ceus-media/common": "0.8.2",
         "ceus-media/hydrogen-framework": "dev-master",
         "ceus-media/hydrogen-modules": "dev-master",
         "ceus-media/mail": "dev-master",
