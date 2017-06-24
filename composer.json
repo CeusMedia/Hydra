@@ -5,7 +5,7 @@
         "ceus-media/hydrogen-framework": "^0.8",
         "ceus-media/hydrogen-modules": "dev-master",
         "ceus-media/mail": "^1",
-        "ceus-media/bootstrap": "*"
+        "ceus-media/bootstrap": "^0"
     },
     "license": "GPL 3.0",
     "authors": [
